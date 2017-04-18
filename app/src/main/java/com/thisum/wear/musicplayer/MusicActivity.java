@@ -37,7 +37,7 @@ public class MusicActivity extends WearableActivity implements View.OnClickListe
     private ImageView mPlayPause;
     private ImageView mSkipNext;
     private ImageView mSkipPrev;
-    private ImageButton volBtn;
+//    private ImageButton volBtn;
     private TextView mClockView;
     private TextView mStart;
     private TextView mEnd;
@@ -83,7 +83,7 @@ public class MusicActivity extends WearableActivity implements View.OnClickListe
         mStart = ( TextView ) findViewById( R.id.startText );
         mEnd = ( TextView ) findViewById( R.id.endText );
         mSeekbar = ( SeekBar ) findViewById( R.id.seekBar );
-        volBtn = ( ImageButton ) findViewById( R.id.volButton );
+//        volBtn = ( ImageButton ) findViewById( R.id.volButton );
 
         play = BitmapFactory.decodeResource( getResources(), R.drawable.ic_play );
         pause = BitmapFactory.decodeResource( getResources(), R.drawable.ic_pause );
@@ -130,7 +130,7 @@ public class MusicActivity extends WearableActivity implements View.OnClickListe
         mPlayPause.setOnClickListener( this );
         mSkipNext.setOnClickListener( this );
         mSkipPrev.setOnClickListener( this );
-        volBtn.setOnClickListener( this );
+//        volBtn.setOnClickListener( this );
 
         mediaPlayer.setOnCompletionListener( this );
         mediaPlayer.setOnPreparedListener( this );
@@ -180,10 +180,10 @@ public class MusicActivity extends WearableActivity implements View.OnClickListe
         {
             findAndPlaySong( false );
         }
-        if( v == volBtn )
-        {
-            showVolumeChange();
-        }
+//        if( v == volBtn )
+//        {
+//            showVolumeChange();
+//        }
     }
 
     @Override
